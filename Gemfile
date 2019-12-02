@@ -3,9 +3,11 @@
 source 'https://rubygems.org'
 ruby '2.6.3'
 
+gem 'bcrypt'
 gem 'bootsnap', '>= 1.1.0', require: false
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder'
+gem 'jwt'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
 # bundle exec rake doc:rails generates the API under doc/api.
