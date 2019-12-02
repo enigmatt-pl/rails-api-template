@@ -1,24 +1,52 @@
-# README
+# rails-api-template
+Clone, rename and play!
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Usage
+-------------
+    $ git clone https://github.com/Nytorian/rails-api-template.git
 
-Things you may want to cover:
+or
 
-* Ruby version
+    $ git clone git@github.com:Nytorian/rails-api-template.git
 
-* System dependencies
 
-* Configuration
+    $ cd rails-api-template
 
-* Database creation
+To start developing your own API on top of rails-api-template:
 
-* Database initialization
+    $ rake rename
+    $ <new_project_name>
 
-* How to run the test suite
+if successful:
 
-* Services (job queues, cache servers, search engines, etc.)
+    $ cd ../<new_project_name>
 
-* Deployment instructions
+Tests
+-------------
 
-* ...
+In order to run the whole test suite:
+
+    $ rake test:all
+
+Check if rspec tests pass:
+
+    $ bundle exec rspec
+
+We use Rubocop to enforce code style and structure which can be run by calling:
+
+    $ bundle exec rubocop
+
+Breakman is a security scanner for Ruby on Rails applications:
+
+    $ bundle exec brakeman
+
+Bundle Audit helps us find vulnerabilities in gems:
+
+    $ bundle exec bundle audit check --update
+
+
+Contributing
+-------------
+If you would like to help, please read the [CONTRIBUTING][] file for suggestions.
+
+[contributing]: CONTRIBUTING.md
