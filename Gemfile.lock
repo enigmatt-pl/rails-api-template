@@ -218,6 +218,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bcrypt
   bootsnap (>= 1.1.0)
   brakeman
   bundler-audit
@@ -227,6 +228,7 @@ DEPENDENCIES
   factory_bot_rails
   faker
   jbuilder
+  jwt
   listen
   mysql2
   rails (~> 5.2.3)
