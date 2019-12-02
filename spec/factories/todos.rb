@@ -3,6 +3,6 @@
 FactoryBot.define do
   factory :todo do
     title{ 'Build an actual application from this template :)' }
-    created_by{ Faker::Number.number(digits: 10) }
+    subscriber_id{ Faker::Number.number(digits: 10) }
   end
 end
