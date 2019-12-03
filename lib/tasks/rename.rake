@@ -14,5 +14,6 @@ task :rename do
     system("rm #{new_dir_name}/README.md")
 
     system("mv README.md.sample README.md")
+    system("rm -R ../#{new_dir_name}")
   end
 end
