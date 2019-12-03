@@ -18,10 +18,6 @@ To start developing your own API on top of rails-api-template:
     $ rake rename
     $ <new_project_name>
 
-if successful:
-
-    $ cd ../<new_project_name>
-
 Tests
 -------------
 
