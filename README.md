@@ -11,6 +11,7 @@ or
 
 
     $ cd rails-api-template
+    $ bundle
 
 To start developing your own API on top of rails-api-template:
 
