@@ -1,19 +1,23 @@
 task :rename do
   STDOUT.puts "Enter new project name:"
 
-  tmp_name = STDIN.gets.strip
-  success = system("rails g rename:app_to '#{tmp_name}'")
+  old_app_name = 'rails-api-template'
+
+  tmp_name = STDIN.gets.strip&.gsub(' ', '-')&.parameterize
+  success = system("rails g rename:into '#{tmp_name}'")
+
   puts(success ? 'Success!' : 'Something went wrong!')
 
-  new_dir_name = Rails.root.to_s.gsub('rails-api-template', tmp_name.parameterize)
+  new_app_dir = Rails.root.to_s.gsub(old_app_name, tmp_name)
 
   if success
-    loop{ break if File.directory?(new_dir_name) }
+    loop{ break if File.directory?(new_app_dir) }
 
-    system("rm #{new_dir_name}/CONTRIBUTING.md")
-    system("rm #{new_dir_name}/README.md")
+    system("rm #{new_app_dir}/CONTRIBUTING.md")
+    system("rm #{new_app_dir}/README.md")
 
     system("mv README.md.sample README.md")
-    system("rm -R ../#{new_dir_name}")
+
+    system("cd #{new_app_dir}")
   end
 end
