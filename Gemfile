@@ -14,6 +14,7 @@ gem 'rails', '~> 5.2.3'
 gem 'devise-jwt'
 gem 'mysql2'
 gem 'sdoc', '~> 0.4.0', group: :doc
+gem "rack", ">= 2.1.4"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
