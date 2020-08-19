@@ -9,12 +9,12 @@ gem 'bootsnap', '>= 1.1.0', require: false
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder'
 gem 'jwt'
+gem 'json', ">= 2.3.0"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'devise-jwt'
 gem 'mysql2'
-gem 'sdoc', '~> 0.4.0', group: :doc
 gem "rack", ">= 2.1.4"
 
 group :development, :test do

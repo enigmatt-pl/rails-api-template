@@ -93,7 +93,7 @@ GEM
       concurrent-ruby (~> 1.0)
     jbuilder (2.10.0)
       activesupport (>= 5.0.0)
-    json (1.8.6)
+    json (2.3.1)
     jwt (2.2.2)
     listen (3.2.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
@@ -151,7 +151,6 @@ GEM
     rb-fsevent (0.10.4)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
-    rdoc (4.3.0)
     regexp_parser (1.7.1)
     rename (1.0.6)
       activesupport
@@ -195,9 +194,6 @@ GEM
     rubocop-rspec (1.43.1)
       rubocop (~> 0.87)
     ruby-progressbar (1.10.1)
-    sdoc (0.4.2)
-      json (~> 1.7, >= 1.7.7)
-      rdoc (~> 4.0)
     shoulda-matchers (4.3.0)
       activesupport (>= 4.2.0)
     spring (2.1.0)
@@ -239,6 +235,7 @@ DEPENDENCIES
   factory_bot_rails
   faker
   jbuilder
+  json (>= 2.3.0)
   jwt
   listen
   mysql2
@@ -249,7 +246,6 @@ DEPENDENCIES
   rubocop
   rubocop-faker
   rubocop-rspec
-  sdoc (~> 0.4.0)
   shoulda-matchers
   spring
 
