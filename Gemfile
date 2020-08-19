@@ -3,6 +3,7 @@
 source 'https://rubygems.org'
 ruby '2.6.3'
 
+gem 'activesupport', ">= 5.2.4.3"
 gem 'bcrypt'
 gem 'bootsnap', '>= 1.1.0', require: false
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
