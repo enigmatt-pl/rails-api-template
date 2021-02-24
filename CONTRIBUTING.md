@@ -8,5 +8,3 @@ Here are some reasons why your pull request may not be merged:
 4. It changes behavior without changing the relevant comments, or specs.
 5. It breaks the tests on a supported platform.
 6. It doesn’t merge cleanly (requiring Git rebasing and conflict resolution).
-
-Include this emoji in the top of your ticket to signal that you read this file: 💪
