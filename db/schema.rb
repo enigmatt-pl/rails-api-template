@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 2019_12_03_473709) do
 
-  create_table "items", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+  create_table "items", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb3", force: :cascade do |t|
     t.string "name"
     t.boolean "done"
     t.bigint "todo_id"
@@ -21,14 +21,14 @@ ActiveRecord::Schema.define(version: 2019_12_03_473709) do
     t.index ["todo_id"], name: "index_items_on_todo_id"
   end
 
-  create_table "subscribers", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+  create_table "subscribers", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb3", force: :cascade do |t|
     t.string "login"
     t.string "password_digest"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "todos", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+  create_table "todos", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb3", force: :cascade do |t|
     t.string "title"
     t.bigint "subscriber_id"
     t.datetime "created_at", null: false
