@@ -12,6 +12,9 @@ AllCops:
 Style/GlobalVars:
   Enabled: false
 
+Lint/ConstantDefinitionInBlock:
+  Enabled: false
+
 Style/PercentLiteralDelimiters:
   Enabled: false
 

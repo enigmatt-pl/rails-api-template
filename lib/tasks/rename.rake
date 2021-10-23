@@ -1,9 +1,9 @@
 task :rename do
-  STDOUT.puts "Enter new project name:"
+  $stdout.puts "Enter new project name:"
 
   old_app_name = 'rails-api-template'
 
-  tmp_name = STDIN.gets.strip&.gsub(' ', '-')&.parameterize
+  tmp_name = $stdin.gets.strip&.gsub(' ', '-')&.parameterize
   success = system("rails g rename:into '#{tmp_name}'")
 
   puts(success ? 'Success!' : 'Something went wrong!')
