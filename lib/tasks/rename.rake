@@ -1,3 +1,4 @@
+# yolo!
 task :rename do
   $stdout.puts "Enter new project name:"
 
